@@ -32,7 +32,7 @@ public class IntentionWrapperHandler {
                 k -> new HashMap<>());
 
         circumstance.getAllIntentions().forEachRemaining((intention) -> {
-            Map<Integer, PlanBody> lastDeeds = circumstance.getLastDeed();
+            Map<Integer, PlanBody> lastDeeds = circumstance.getLastDeeds();
             PlanBody lastDeed = lastDeeds.get(intention.getId());
 
             List<IntendedMeans> intendedMeans = new ArrayList<>();
